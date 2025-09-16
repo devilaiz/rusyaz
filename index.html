@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="imgs/favicon.png">
+  <title>Учебник по русскому языку</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="./imgs/logo.jpeg" alt="Логотип колледжа">
+      <h4>Костанайский Политехнический Высший Колледж</h4>
+    </div>
+    <div class="yo">
+      <h2>Русская литература (технико-технологическое направление)</h2>
+    </div>
+    <nav>
+      <a href="#" onclick="openQuests()">Квесты</a>
+      <a href="#" onclick="openContents()">Содержание</a>
+      <a href="#" onclick="openIntroduction()">Введение</a>
+      <a href="#" onclick="openLiterature()">Литература</a>
+    </nav>
+  </header>
+
+  <!-- Основная часть -->
+  <main>
+    <!-- Главная страница -->
+    <div class="container" id="values-page"> 
+      <h2>Ценности программы Адал азамат</h2>
+      <div class="values">
+        <!-- карточки будут рендериться из lessons.js -->
+      </div>
+    </div>
+
+    <!-- Контент урока -->
+    <div class="container" id="lesson-content" style="display:none;">
+      <h2 id="lesson-title">Lesson</h2>
+      <div id="lesson-text"></div>
+      <button class="back-btn" onclick="goBack()">⬅ Назад</button>
+    </div>
+
+    <!-- Список литературы -->
+    <div class="container" id="literature-content" style="display:none;">
+      <h2>Список литературы</h2>
+      <div id="literature-text"></div>
+      <button class="back-btn" onclick="goBack()">⬅ Назад</button>
+    </div>
+  </main>
+
+  <footer>
+    Разработчик Амантаева С.К.
+  </footer>
+
+  <script src="./lessons.js"></script>
+</body>
+</html>
