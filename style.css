@@ -170,7 +170,15 @@ main {
   transition: background 0.3s;
   height: 20px; /* одинаковая высота кнопок */
 }
-
+#lesson-text img,
+#literature-text img,
+.value-card img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 10px auto;  /* центрируем */
+  border-radius: 8px; /* чтобы были аккуратнее */
+}
 .lessons-list a:hover {
   background: #c1270c;
   color: white;
@@ -415,5 +423,13 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.08);
     max-width: 95% !important;   /* кнопки чуть уже */
     margin: 0 auto;              /* центрируем каждую */
+  }
+}
+@media (max-width: 500px) {
+  #lesson-text img,
+  #literature-text img,
+  .value-card img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
